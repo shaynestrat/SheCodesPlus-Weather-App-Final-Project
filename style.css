@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #541cc4;
+  text-align: left;
+
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h2 {
+  color: #541cc4;
+  text-align: center;
+  display: inline-block;
+  margin: 10px auto;
+
+  display: block;
+  margin-top: 40px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  border: 3px;
+  border-bottom-style: solid;
+
+  font-weight: 600;
+}
+
+h3 {
+  color: #818db4;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  font-weight: 500;
+
+  display: block;
+}
+
+h4 {
+  color: #818db4;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0px;
+  font-weight: 700;
+  margin: auto;
+  display: block;
+}
+
+h5 {
+  color: #818db4;
+  text-align: center;
+  margin-top: -5px;
+  line-height: 35px;
+  padding: 0px;
+  font-weight: 400;
+  float: left;
+
+  padding: 0px;
+  font-weight: 400;
+}
+
+h6 {
+  color: #541cc4;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 0px;
+  font-weight: 600;
+  margin: auto;
+  display: block;
+}
+p {
+  font-size: 18px;
+  margin: auto;
+  display: block;
+}
+
+img {
+  margin-top: 55px;
+}
+
+.center_temp {
+  margin: auto;
+  display: block;
+  width: 50px;
+}
+
+.large-row {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.Bottom-row {
+  padding: 25px 20px 25px 20px;
+  margin: auto;
+  display: block;
+  border: 2px red solid;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+.currentTemp {
+  margin-top: -5px;
+}
+.center {
+  margin: auto;
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  height: 80px;
+}
+
+.squares {
+  border: 2px blue solid;
+  padding: 10px 10px 0px 10px;
+  margin: 0px 10px 0px 10px;
+  background-color: #ffff;
+}
+
+.form-control {
+  width: 250px;
+  margin-right: 10px;
+  height: 40px;
+  float: left;
+}
+
+.btn-primary {
+  background-color: rgb(8, 96, 248);
+  border: 1px solid white;
+  border-radius: px;
+  margin-top: px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(118, 133, 219);
+}
+
+#current-location-button {
+  background-color: #768bd1d3;
+  border: 1px solid rgb(92, 119, 168);
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+#current-location-button:hover {
+  background-color: #e0b65b;
+  border: 1px solid rgb(92, 119, 168);
+}

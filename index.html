@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week Two Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="large-row">
+        <div class="col-12 col-lg-3">
+          <h1>World Weather:</h1>
+        </div>
+        <div class="col-12 col-lg-4">
+          <form class="search-form form-group mx-sm-8 mb-2" id="search-form">
+            <input
+              type="text"
+              class="form-control"
+              id="city-input"
+              placeholder="Enter a City"
+              auto-focus="off"
+            />
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="button-addon2"
+              style="float: left"
+            >
+              Search
+            </button>
+            <button class="btn btn-success w-100" id="current-location-button">
+              📍 Current location
+            </button>
+          </form>
+        </div>
+          <div class="col-12 col-lg-2 text-center text-lg-left">
+          <img src="src/partly-cloudy.png" width="170px" class="img" />
+        </div>
+        <div class="col-12 col-lg-2">
+          <h2 id="city">Richmond</h2>
+
+          <h3 class="card-text" id="date">Today</h3>
+          <span class="center_temp"
+            ><h5 class="temperature" id="temperature">99</h5>
+            <h5>°F</h5></span
+          >
+        </div>
+      </div>
+    </div>
+      <div class="Bottom-row">
+        <div class="row">
+          <div class="col col-lg-2">
+            <div class="squares">
+              <div class="row"><h6>Tues</h6></div>
+              <div class="row">
+                <img src="src/partly-cloudy.png" class="center" width="80px" />
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="row"><p>Hi 69</p></div>
+                  <div class="row"><p>Lo 43</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-2">
+            <div class="squares">
+              <div class="row"><h6>Wed</h6></div>
+              <div class="row">
+                <img src="src/rain.jpg" class="center" width="80px" />
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="row"><p>Hi 69</p></div>
+                  <div class="row"><p>Lo 43</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-2">
+            <div class="squares">
+              <div class="row"><h6>Thurs</h6></div>
+              <div class="row">
+                <img src="src/rain.jpg" class="center" width="80px" />
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="row"><p>Hi 69</p></div>
+                  <div class="row"><p>Lo 43</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-2">
+            <div class="squares">
+              <div class="row"><h6>Fri</h6></div>
+              <div class="row">
+                <img src="src/partly-cloudy.png" class="center" width="80px" />
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="row"><p>Hi 69</p></div>
+                  <div class="row"><p>Lo 43</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-2">
+            <div class="squares">
+              <div class="row"><h6>Sat</h6></div>
+              <div class="row">
+                <img src="src/hurricane.png" class="center" width="80px" />
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="row"><p>Hi 69</p></div>
+                  <div class="row"><p>Lo 43</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-2">
+            <div class="squares">
+              <div class="row"><h6>Sun</h6></div>
+              <div class="row">
+                <img src="src/partly-cloudy.png" class="center" width="80px" />
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="row"><p>Hi 69</p></div>
+                  <div class="row"><p>Lo 43</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <small
+        ><a
+          href="https://github.com/shaynestrat/SheCodesPlus-Final_Weather-App"
+          target="_blank"
+        >
+          Open-source code</a
+        >
+        by Shayne Stratyner
+      </small>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
