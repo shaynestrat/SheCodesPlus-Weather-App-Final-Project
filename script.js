@@ -1,15 +1,16 @@
 function formatDate(date) {
-  let hours = date.getHours();
+  let now = new Date();
+  let hours = now.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let minutes = date.getMinutes();
+  let minutes = now.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
 
-  let dayIndex = date.getDay();
-  let days = [
+  let day = weekDays[now.getDay()];
+  let weekDays = [
     "Sunday",
     "Monday",
     "Tuesday",
