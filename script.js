@@ -19,6 +19,7 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[dayIndex];
+  let h5 = document.querySelector("h5");
 
   return `${day} ${hours}:${minutes}`;
 }
