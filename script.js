@@ -21,7 +21,12 @@ function formatDate(date) {
   let day = days[dayIndex];
   let h5 = document.querySelector("h5");
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day} ${date.toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  })}
+`;
 }
 
 function displayWeatherCondition(response) {
@@ -50,13 +55,17 @@ function handleSubmit(event) {
 
 function seachLocation(position) {
   let apiKey = "5694f43f4dbaf07d0e041cc20cf76b31";
+  let latitude = position.coords.latitude;
+  let longitude = psotion.coords.longitude;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
-  let apiUrl = `"https://api.openweathermap.org/data/2.5/weather"?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(getPosition);
+  axios.get(apiUrl).then(displayWeatherCondition);
 }
 
-navigator.geolocation.getCurrentPosition(displayWeatherCondition);
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
@@ -66,3 +75,4 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
