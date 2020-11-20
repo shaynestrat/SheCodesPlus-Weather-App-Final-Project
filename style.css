@@ -154,7 +154,10 @@ img {
 
 #city {
   margin-top: 25px;
+  display: block;
 }
 
-
+#celsius-link, #fahrenheit-link{
+  text-align:center ;
+}
 
