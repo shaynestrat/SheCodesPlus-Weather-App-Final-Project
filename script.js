@@ -76,3 +76,15 @@ searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+function displayCelciusTemperature(event) {
+  event.preventDefault();
+}
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = celciusTemperature;
+
+
+
+
+let farLink = document.querySelector("#far-link");
+farLink.addEventListener("click", displayFarenheitTemperature);

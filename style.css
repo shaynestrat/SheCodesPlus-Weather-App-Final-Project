@@ -6,7 +6,7 @@ h1 {
   color: #8d68d6;
   text-align: left;
 
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -56,12 +56,12 @@ h5 {
   color: #818db4;
   text-align: center;
   margin-top: -5px;
-  line-height: 35px;
+  
   padding: 0px;
   font-weight: 400;
-  float: left;
-
-  padding: 0px;
+ 
+  margin:0 auto;
+  display: inline-block;
 }
 
 h6 {
@@ -82,7 +82,7 @@ p {
 }
 
 img {
-  margin-top: 55px;
+  margin-top: 25px;
 }
 
 .center_temp {
@@ -139,6 +139,7 @@ img {
   background-color: rgb(118, 133, 219);
 }
 
+
 #current-location-button {
   background-color: #768bd1d3;
   border: 1px solid rgb(92, 119, 168);
@@ -150,3 +151,10 @@ img {
   background-color: #e0b65b;
   border: 1px solid rgb(92, 119, 168);
 }
+
+#city {
+  margin-top: 25px;
+}
+
+
+
