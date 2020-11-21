@@ -88,7 +88,7 @@ img {
 .center_temp {
   margin: auto;
   display: block;
-  width: 50px;
+  text-align: center;
 }
 
 .large-row {
