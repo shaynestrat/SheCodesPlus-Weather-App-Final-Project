@@ -1,5 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+
+  background-image: url("pexels-stein-egil-liland-3374210.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -11,7 +16,7 @@ h1 {
 }
 
 h2 {
-  color: #541cc4;
+  color: #7549ce;
   text-align: center;
   display: inline-block;
   margin: 10px auto;
@@ -56,16 +61,16 @@ h5 {
   color: #818db4;
   text-align: center;
   margin-top: -5px;
-  
+
   padding: 0px;
   font-weight: 400;
- 
-  margin:0 auto;
+
+  margin: 0 auto;
   display: inline-block;
 }
 
 h6 {
-  color: #541cc4;
+  color: #7a4bd8;
   text-align: left;
   margin-top: 10px;
   font-size: 30px;
@@ -83,7 +88,9 @@ p {
 
 img {
   margin-top: 25px;
+  border: 3px solid rgb(92, 119, 168);
 }
+
 
 .center_temp {
   margin: auto;
@@ -139,7 +146,6 @@ img {
   background-color: rgb(118, 133, 219);
 }
 
-
 #current-location-button {
   background-color: #768bd1d3;
   border: 1px solid rgb(92, 119, 168);
@@ -157,7 +163,7 @@ img {
   display: block;
 }
 
-#celsius-link, #fahrenheit-link{
-  text-align:center ;
+#celsius-link,
+#fahrenheit-link {
+  text-align: center;
 }
-
