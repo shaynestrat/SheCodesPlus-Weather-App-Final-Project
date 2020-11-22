@@ -2,9 +2,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 
   background-image: url("pexels-stein-egil-liland-3374210.jpg");
+ 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -79,6 +82,7 @@ h6 {
   font-weight: 600;
   margin: auto;
   display: block;
+
 }
 p {
   font-size: 18px;
